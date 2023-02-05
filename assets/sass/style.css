@@ -1,0 +1,225 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body li, * li {
+  list-style: none;
+}
+body a, * a {
+  text-decoration: none;
+}
+
+.section1 {
+  width: 100%;
+  height: 420px;
+  background-image: url("https://template.hasthemes.com/victorid/victorid/assets/images/bg/breadcrumb.webp");
+  background-size: cover;
+  background-position: 0%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.li1 {
+  font-size: 12px;
+}
+
+.a1 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.row2 {
+  position: absolute;
+  background-color: none;
+}
+
+.p1 {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.p1 span {
+  color: #e63111;
+}
+
+.section2 {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0px 95px;
+}
+@media (max-width: 900px) {
+  .section2 {
+    height: 220vh;
+  }
+}
+
+.box1, .box2, .box3 {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 376px;
+  height: 435px;
+  background-image: url("https://template.hasthemes.com/victorid/victorid/assets/images/law/1.webp");
+}
+.box1 .circle, .box2 .circle, .box3 .circle {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+.box1 .circle::after, .box2 .circle::after, .box3 .circle::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background-color: red;
+  left: 28px;
+  margin-top: 15px;
+}
+.box1 .circle::before, .box2 .circle::before, .box3 .circle::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: red;
+  top: 28px;
+  left: 15px;
+}
+.box1:hover .circle, .box2:hover .circle, .box3:hover .circle {
+  display: block;
+}
+.box1:hover .box1-content, .box1:hover .box2-content, .box1:hover .box3-content, .box2:hover .box1-content, .box2:hover .box2-content, .box2:hover .box3-content, .box3:hover .box1-content, .box3:hover .box2-content, .box3:hover .box3-content {
+  background-color: black;
+  opacity: 0.8;
+  transition: 2s;
+}
+.box1:hover .box1-content a, .box1:hover .box2-content a, .box1:hover .box3-content a, .box2:hover .box1-content a, .box2:hover .box2-content a, .box2:hover .box3-content a, .box3:hover .box1-content a, .box3:hover .box2-content a, .box3:hover .box3-content a {
+  opacity: 0;
+  transition: 1s;
+}
+.box1 .box1-content, .box1 .box2-content, .box1 .box3-content, .box2 .box1-content, .box2 .box2-content, .box2 .box3-content, .box3 .box1-content, .box3 .box2-content, .box3 .box3-content {
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 20px 10px;
+}
+.box1 .box1-content a, .box1 .box2-content a, .box1 .box3-content a, .box2 .box1-content a, .box2 .box2-content a, .box2 .box3-content a, .box3 .box1-content a, .box3 .box2-content a, .box3 .box3-content a {
+  transition: 1s;
+  color: red;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.box1 .box1-content > h4::after, .box1 .box2-content > h4::after, .box1 .box3-content > h4::after, .box2 .box1-content > h4::after, .box2 .box2-content > h4::after, .box2 .box3-content > h4::after, .box3 .box1-content > h4::after, .box3 .box2-content > h4::after, .box3 .box3-content > h4::after {
+  position: absolute;
+  content: "";
+  background-image: url("https://template.hasthemes.com/victorid/victorid/assets/images/icon/1.webp");
+  width: 197px;
+  height: 7px;
+  left: 50%;
+  top: 125px;
+  margin-left: -100px;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 376px;
+  height: 435px;
+  background-image: url("https://template.hasthemes.com/victorid/victorid/assets/images/law/2.webp");
+}
+
+.box3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 376px;
+  height: 435px;
+  background-image: url("https://template.hasthemes.com/victorid/victorid/assets/images/law/3.webp");
+}
+
+.section3 {
+  width: 100%;
+  height: 120vh;
+}
+.section3 .s3title {
+  width: auto;
+  height: auto;
+}
+.section3 .s3title h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.text-right {
+  background-color: rgba(170, 206, 212, 0.2);
+  padding: 34px 65px;
+  height: 100%;
+}
+.text-right .video {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 516px;
+  height: 280px;
+  background-image: url("https://template.hasthemes.com/victorid/victorid/assets/images/bg/2.webp");
+  background-size: cover;
+}
+.text-right .video .videoplayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+}
+.text-right .video .videoplayer .button {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transform: translateX(3px);
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+.text-right .video .videoplayer:hover {
+  background-color: red;
+}
+.text-right .video .videoplayer:hover .button {
+  background-color: white;
+}
+.text-right .textmenu h3 {
+  color: #444444;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.text-right .textmenu p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.text-right .textmenu .imzah4 {
+  color: #e63111;
+  font-size: 35px;
+  font-family: "Great Vibes", cursive;
+  float: right;
+  font-weight: 400;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
